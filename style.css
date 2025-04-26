@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #111111;
+    color: #fff;
+}
+
+main {
+    position: relative;
+    display: block;
+}
+
+.u-sheet {
+    position: relative;
+    margin: 5rem 10rem;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 1em 0.5em rgba(11, 236, 49, 0.3);
+}
+
+/* Form Code */
+
+form {
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%;
+}
+
+.u-text {
+    word-wrap: break-word;
+    position: relative;
+}
+
+.u-field {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+}
+
+.form-group {
+    display: flex;
+    width: 100%;
+    margin: 40px 0;
+}
+
+/* Title Form Code */
+
+.u-title {
+    text-align: center;
+}
+
+.u-title h1 {
+    font-size: 3rem;
+}
+
+/* User Information Code */
+
+#form-user-info {
+    margin: 35px 0;
+}
+
+.u-list:not(.u-repeater) {
+    display: flex;
+    flex-direction: column;
+}
+
+.u-repeater {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    display: grid;
+}
+
+#form-user-info .u-repeater {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.u-repeater-item {
+    display: flex;
+    position: relative;
+}
+
+.u-container-layout {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.u-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.u-input, select {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: 100%;
+    color: #111;
+    appearance: none;
+    box-sizing: border-box;
+    transition: 0.2s ease;
+}
+
+.u-input:hover, select:hover {
+    transform: scale(1.02);
+    transition: 0.2s ease;
+}
+
+.u-select {
+    color: #bdc3c7;
+}
+
+.u-select.selected {
+    color: #111;
+}
+
+/* Upload ID Code */
+
+#uploadImg {
+    display: none;
+    max-width: 100%;    /* This will allow the picture to stay in the margin */
+}
+
+/* User Password Code */
+
+.show-password {
+    display: inline-block;
+    margin: 5px 0;
+    cursor: pointer;
+    font-weight: 600;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+}
+
+/* User Submit Form Code */
+
+#form-submit {
+    margin: 70px 0 0 0;
+}
+
+#form-submit .u-field {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    margin: 5px;
+    width: 80px;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    transform: scale(1.06);
+    transition: 0.2s ease;
+}
+
+#btnSubmit {
+    color: #111;
+    background-color: #418c41;
+}
+
+#btnSubmit:hover {
+    color: #fff;
+    background-color: #336933;
+}
+
+#btnReset {
+    color: #fff;
+    background-color: #969696;
+}
+
+#btnReset:hover {
+    color: #111;
+    background-color: #808080;
+}
+
+/* Error Messages */
+
+.error {
+    color: #d13434;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.error.visible {
+    display: block;
+    margin: 5px 0 0 0;
+}

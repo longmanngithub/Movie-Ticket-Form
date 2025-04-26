@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <main class="home" id="home">
+        <div class="u-sheet">
+
+            <!-- Title Form Code -->
+
+            <div class="u-title">
+                <h1 class="u-text">Movie Ticket</h1>
+            </div>
+
+            <!-- Form Section Code -->
+
+            <div class="u-form">
+                <form action="/" name="userForm" id="user" method="post">
+
+                    <!-- User Information Code -->
+
+                    <div class="form-group" id="form-user-info">
+                        <div class="u-repeater">
+
+                            <!-- User Name Form Code -->
+
+                            <div class="u-repeater-item" id="form-fname">
+                                <div class="u-container-layout">
+                                    <label for="fname" class="u-label u-text">First Name:</label>
+                                    <input type="text" name="fname" id="fname" class="u-input" required>
+                                    <span class="error" id="fname-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="u-repeater-item" id="form-lname">
+                                <div class="u-container-layout">      
+                                    <label for="fname" class="u-label u-text">Last Name:</label>
+                                    <input type="text" name="lname" id="lname" class="u-input" required>
+                                    <span class="error" id="lname-error"></span>
+                                </div>
+                            </div>
+
+                            <!-- User Email Form Code -->
+
+                            <div class="u-repeater-item" id="form-email">
+                                <div class="u-container-layout">
+                                    <label for="email" class="u-label u-text">Email:</label>
+                                    <input type="email" name="email" id="email" class="u-input" required>
+                                    <span class="error" id="email-error"></span>
+                                </div>
+                            </div>
+
+                            <!-- User Phone Number Form Code -->
+
+                            <div class="u-repeater-item" id="form-phone">
+                                <div class="u-container-layout">
+                                    <label for="phone" class="u-label u-text">Phone Number:</label>
+                                    <input type="tel" inputmode="numeric" size="10" pattern="[0]{1}[1-9]{1}[0-9]{7,8}" minlength="9" maxlength="10" name="phone" id="phone" class="u-input" required>
+                                    <span class="error" id="phone-error"></span>
+                                </div>
+                            </div>
+
+                            <!-- User Gender Form Code -->
+
+                            <div class="u-repeater-item" id="form-gender">
+                                <div class="u-container-layout">
+                                    <label for="gender" class="u-label u-text">Gender:</label>
+                                    <select name="gender" id="gender" class="u-select" required>
+                                        <option value="" disabled selected>Select Gender</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="other">Prefer not to say</option>
+                                    </select>
+                                    <span class="error" id="gender-error"></span>
+                                </div>
+                            </div>
+
+                            <!-- User Age Form Code -->
+
+                            <div class="u-repeater-item" id="form-age">
+                                <div class="u-container-layout">
+                                    <label for="age" class="u-label u-text">Age:</label>
+                                    <select name="age" id="age" class="u-select" required>
+                                        <option value="" disabled selected>Select Age</option>
+                                        <option value="7yo">Below 7 years old</option>
+                                        <option value="7-13yo">7-13 years old</option>
+                                        <option value="13-18yo">13-18 years old</option>
+                                        <option value="18yo">Above 18 years old</option>
+                                    </select>
+                                    <span class="error" id="age-error"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Movie Form Code -->
+
+                    <div class="form-group" id="form-movie">
+                        <div class="u-field">
+                            <div class="u-container-layout">
+                                <label for="movie" class="u-label u-text">Movie:</label>
+                                <select name="movie" id="movie" class="u-select" required>
+                                    <option value="" disabled selected>Select Movie</option>
+                                    <option value="inside-out-2">Inside Out 2</option>
+                                    <option value="my-neighbor-totoro">My Neightbor Totoro</option>
+                                    <option value="the-breakfast-club">The Breakfast Club</option>
+                                    <option value="the-wolf-of-wall-street">the Wolf of Wall Street</option>
+                                </select>
+                                <span class="error" id="movie-error"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Upload ID Form Code -->
+
+                    <div class="form-group" id="form-id">
+                        <div class="u-field">
+                            <div class="u-container-layout">
+                                <label for="id" class="u-label u-text">Upload ID:</label>
+                                <input type="file" name="id" id="id" accept=".jpg,.jpeg,.png" class="u-input">
+                                <img src="#" alt="ID Image" id="uploadImg">
+                                <span class="error" id="id-error"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Password Form Menu -->
+
+                    <div class="form-group" id="form-password">
+                        <div class="u-field">                
+                            <div class="u-container-layout">
+                                <label for="password" class="u-label u-text">Password:</label>
+                                <input type="password" name="password" id="password" class="u-input" required>
+                                <span class="show-password" id="togglePassword">Show Password</span>
+                                <span class="error" id="password-error"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- User Submit Form Code -->
+
+                    <div class="form-group" id="form-submit">
+                        <div class="u-field">
+
+                            <!-- Submit Button Code -->
+                            
+                            <input type="submit" id="btnSubmit" class="btn" value="Submit">
+
+                            <!-- Reset Button Code -->
+                         
+                            <input type="reset" id="btnReset" class="btn" value="Reset">
+
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js" type="text/javascript"></script>
+    
+</body>
+</html>
